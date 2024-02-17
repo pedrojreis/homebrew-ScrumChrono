@@ -1,6 +1,6 @@
 <div align="center">
 
-Image here
+![ScrumChrono](https://github.com/pedrojreis/ScrumChrono/blob/main/assets/example.gif?raw=true)
 
 # ScrumChrono
 
@@ -8,7 +8,6 @@ Image here
   <a href="#features">Features</a> •
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
-  <a href="#built-with">Built With</a> •
 </div>
 
 ---
@@ -25,6 +24,10 @@ Feel free to open an issue with any bug you encounter of any suggestion.
 * Pause
 * Atlassian Integration
 * Soon: Statistics
+
+<p align="center">
+  <img width="420" height="640" src="https://github.com/pedrojreis/ScrumChrono/blob/main/assets/jira_example.png?raw=true">
+</p>
 
 ## Installation
 
@@ -47,12 +50,3 @@ ScrumChrono config view
 # Run for firstteamname
 ScrumChrono -t firstteamname
 ```
-
-## Built With
-
-* [Go 1.21.7](https://go.dev/dl/) - Framework
-  * [Cobra](https://github.com/spf13/cobra) - lib to create cli app
-  * [Viper](https://github.com/spf13/viper) - configuration solution
-  * [Termui](https://github.com/gizak/termui) - terminal dashboard and widget library
-  * [Go-Figure](https://github.com/common-nighthawk/go-figure) - beautiful ASCII
-* ❤️
