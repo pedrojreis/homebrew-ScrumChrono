@@ -32,8 +32,7 @@ Feel free to open an issue with any bug you encounter of any suggestion.
 ## Installation
 
 ```shell
-brew tap pedrojreis/scrumchrono
-brew install scrumchrono
+brew install pedrojreis/tap/scrumchrono
 ```
 
 Feel free to edit the config (view Usage) to your own needs.
