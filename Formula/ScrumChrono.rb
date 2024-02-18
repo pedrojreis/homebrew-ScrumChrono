@@ -10,7 +10,7 @@ class Scrumchrono < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.3/ScrumChrono_Darwin_arm64.tar.gz"
-      sha256 "1a99e2165d344a3bc6a679bb8a50be3f310e416cd8b90e0240156b3995b4ae86"
+      sha256 "b842f2a9500b696448c9c01fedd503bc4f74ae9cdd3e34a3b9f4b2a24c81f261"
 
       def install
         bin.install "ScrumChrono"
@@ -18,7 +18,7 @@ class Scrumchrono < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.3/ScrumChrono_Darwin_x86_64.tar.gz"
-      sha256 "407d91dd25d5da4b91c8cf6d6622171e97c852a12420963c43169e9cfb0409cd"
+      sha256 "76b4d49367aa19cb4665e8a141a5f445c40ab963582d9f8afa1aeaeb741508bf"
 
       def install
         bin.install "ScrumChrono"
@@ -29,7 +29,7 @@ class Scrumchrono < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.3/ScrumChrono_Linux_arm64.tar.gz"
-      sha256 "b242444905a50c74a0daa3d7d86b1e18125dc01a7cb6597be527da1b8a3f0997"
+      sha256 "efbac6b9da866f159a95ba15fc51c10017a7bb80beb6bd43e441d4c8a11ba99c"
 
       def install
         bin.install "ScrumChrono"
@@ -37,7 +37,7 @@ class Scrumchrono < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.3/ScrumChrono_Linux_x86_64.tar.gz"
-      sha256 "a82caa8a6867465ad789596aa0ac7755e71465f9a19e6b0d8b7cca1a7b8945a9"
+      sha256 "eb5212f4d7e291c48949014b30299b58234ea31c8b342235d2b2b5aa2d4b92a2"
 
       def install
         bin.install "ScrumChrono"
