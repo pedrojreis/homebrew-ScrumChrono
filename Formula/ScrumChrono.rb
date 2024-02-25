@@ -5,20 +5,20 @@
 class Scrumchrono < Formula
   desc "ScrumChrono is a terminal UI to aid Scrum meetings."
   homepage "https://github.com/pedrojreis/ScrumChrono"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.4/ScrumChrono_Darwin_arm64.tar.gz"
-      sha256 "71cf936be4d4ea9866cf2d5afdc250a6ab694ccbb81a6516e906d861e8127727"
+      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.5/ScrumChrono_Darwin_arm64.tar.gz"
+      sha256 "8dadf15f72a3d156f87e354397536be5829ebf1904cb95888bb14609e39ff7ba"
 
       def install
         bin.install "ScrumChrono"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.4/ScrumChrono_Darwin_x86_64.tar.gz"
-      sha256 "69ef433d92e1e68c84b572b61349073f51cba547132ebde569b174d75ee0ecb6"
+      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.5/ScrumChrono_Darwin_x86_64.tar.gz"
+      sha256 "10258f35e8c6de8e126411f479bf4c859a045520cf2f70ef45d5c427677f8b23"
 
       def install
         bin.install "ScrumChrono"
@@ -27,17 +27,17 @@ class Scrumchrono < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.4/ScrumChrono_Linux_x86_64.tar.gz"
-      sha256 "9bc001b1e78632b058e0b7d551efc9ed93aa88e20e49945e7615124c59de1adc"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.5/ScrumChrono_Linux_arm64.tar.gz"
+      sha256 "da183ea77aa11c6c4877f1fa4df7920b85729546cafcdf67ddc65a9bb3de4b17"
 
       def install
         bin.install "ScrumChrono"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.4/ScrumChrono_Linux_arm64.tar.gz"
-      sha256 "48f7d0c4436a601d89a47ca7bf02175abb2a2fdd550136db46e1ad138beddb82"
+    if Hardware::CPU.intel?
+      url "https://github.com/pedrojreis/ScrumChrono/releases/download/v0.1.5/ScrumChrono_Linux_x86_64.tar.gz"
+      sha256 "eb03da4f4e171bbb4db91380e9973d4cfa453ba44b1b19eb580a7a180595d479"
 
       def install
         bin.install "ScrumChrono"
